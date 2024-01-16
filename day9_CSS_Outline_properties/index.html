@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline</title>
+    <style>
+        body{
+            background-color: #004d2e;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color:tan;
+            border: 10px solid tomato;
+            padding: 50px;
+            margin: 70px;
+            outline: 10px double honeydew;
+            /* outline-width: 16px; */
+            outline-offset: 15px;
+            
+        }
+        .box img{
+            height: 184%;
+    width: 185%;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+    margin-top: -42px;
+    margin-left: -50px;
+    /* margin-right: auto; */
+    margin-inline-start: -43px;
+        }
+        .discription {
+     background-color: #009933;
+    color: cornsilk;
+    padding: 5px;
+    text-align: center;
+    margin-top: -24px;
+    width: 304px;
+    margin-left: 45px;
+    font-size: large;
+    border-radius: 50px;
+}
+        button{
+            height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 121px;
+    background-color: maroon;
+
+        }
+        button a{
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"><img src="data:image/jpeg;base64,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" alt=""></div>
+    <div class="discription">The Mona Lisa bears a strong resemblance to many Renaissance depictions of the Virgin Mary, who was at that time seen as an ideal for womanhood</div>
+    <button> <a href="https://en.wikipedia.org/wiki/Mona_Lisa" target="_blank">For more information</a></button>
+</body>
+</html>
