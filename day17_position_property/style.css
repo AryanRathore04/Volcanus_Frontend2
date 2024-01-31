@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+    color: white;
+}
+.box1{
+    background-color: blue;
+    height: 100px;
+}
+.box2{
+    background-color: crimson;
+    height: 100px;
+    /* position: relative; */
+    top: 3rem;
+}
+.box3{
+    background-color: darkkhaki;
+    height: 100px;
+}
+.inside_box{
+    height: 100px;
+    width: 100px;
+    background-color: darkgoldenrod;
+    position: absolute;
+    top: 10rem;
+}
+.img{
+    position: relative;
+    width: 700px;
+}
+.img img{
+    width: 700px;
+}
+.inside_img{
+    /* height: 10px;
+    width: 500px; */
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+}
+.inside_img img{
+    height: 100px;
+    width: 100px;
+    border: 2px solid salmon;
+}

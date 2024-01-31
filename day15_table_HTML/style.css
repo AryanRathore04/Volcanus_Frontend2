@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+  color: whitesmoke;
+}
+table {
+  background-color: lightslategray;
+  width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-spacing: 20px;
+  border: 5px solid goldenrod ;
+  border-radius: 15px;
+}
+th {
+  background-color: blueviolet;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  border: 3px solid thistle;
+  padding: 10px;
+  border-radius: 13px;
+}
+td {
+  text-align: center;
+  background-color: rgb(65, 40, 114);
+  font-size: 1.2rem;
+  font-family: cursive;
+  border: 3px solid thistle;
+  padding: 8px;
+  border-radius: 13px;
+}
+th:hover {
+  background-color: rgb(39, 6, 70);
+  border-color: rgb(133, 92, 40);
+  border-radius: 100px;
+}
+td:hover {
+  background-color: rgb(166, 107, 221);
+  border-color: rgb(133, 92, 40);
+  border-radius: 100px;
+}
