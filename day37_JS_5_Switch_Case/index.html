@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <script>
+      const n1 = parseInt(prompt("Enter the first number"));
+      const n2 = parseInt(prompt("Enter the second number"));
+
+      const n3 = parseInt(prompt("Enter the Action"));
+
+      switch (n3) {
+        case 1:
+          console.log(`Sum of ${n1} and ${n2} is ${n1+n2}`);
+          break;
+        case 2:
+          console.log(`Difference of ${n1} and ${n2} is ${n1 - n2}`);
+          break;
+        case 3:
+          console.log(`Multiplication of ${n1} and ${n2} is ${n1*n2}`);
+          break;
+        case 4:
+          console.log(`Division of ${n1} and ${n2} is ${n1/n2}`);
+          break;
+      }
+    </script>
+  </body>
+</html>

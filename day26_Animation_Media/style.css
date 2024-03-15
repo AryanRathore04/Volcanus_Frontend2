@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: lightslategray;
+}
+ .container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    
+ }
+.box{
+    
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background-color:lavenderblush;
+    animation-name: superman;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes superman{
+    0%{
+        top: 0px;
+        left: 0px;
+        background-color: lightslategray;
+        border: 10px solid white;
+    }
+    25%{
+        left: 400px;
+        top: 0px;
+        background-color: lightslategray;
+        border: 10px solid white;
+    }
+    50%{
+        left: 400px;
+        top: 400px;
+        background-color: lightslategray;
+        border: 10px solid white;
+    }
+    75%{
+        left: 0px;
+        top: 400px;
+        background-color: lightslategray;
+        border: 10px solid white;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+       background-color: lightslategray;
+        border: 10px solid white;
+    }
+}
+.cards{
+    width: 19rem;
+    height: 550px;
+    padding: 20px;
+    border: 6px solid darkslategray;
+    background-color: darkgray;
+    border-radius: 20px;
+    
+}
+.cards .img{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+.cards .img img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+.card_body{
+    padding-top: 30px;
+    text-align: center;
+}
+button{
+    /* padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 60px;
+    padding-left: 60px; */
+    padding: 30px;
+    background-color: rgb(68, 49, 42);
+    color: cornsilk;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.button{
+    /* border-radius: 100%; */
+    padding-top: 20px;
+}
+@media only screen and (max-width: 900px) {
+  body {
+    background-color: rgb(19, 65, 15);
+  }
+  .container{
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+    
+  }
+  .container{
+    flex-direction: column;
+  }
+}
