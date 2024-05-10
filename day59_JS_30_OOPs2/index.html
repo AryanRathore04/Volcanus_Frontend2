@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM project</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .superman{
+            display: flex;
+            flex-direction: column;
+            /* gap: 10rem; */
+        }
+        #product{
+            display: flex;
+            gap: 3rem;
+        }
+        .image{
+            width: 200px;
+            height: 200px;
+        }
+        .title{
+            font-size: 2rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        .butt{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.butt:hover{
+    background-color: #1e40af;
+}
+    </style>
+</head>
+<body>
+
+
+
+
+    <input  type="text" id="type" placeholder="Enter the catagory" onchange="inputValue()">
+<button id="mobiles">mobile</button>
+<div id="product"></div>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

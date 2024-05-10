@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    number 1 :- <input type="text" id="i1" onchange="getinputvalue()" />
+    <br />
+    <br />
+    number 2 :- <input type="text" id="i2" onchange="getinputvalue()" />
+    <br />
+    <br />
+    <hr />
+    <h1></h1>
+    number 3 :- <input type="submit" value="ADD" id="btn" /> number 4 :-
+    <input type="submit" value="Substract" id="btn1" /> number 5 :-
+    <input type="submit" value="Multiply" id="btn2" /> number 6 :-
+    <input type="submit" value="Divide" id="btn3" />
+
+    <script>
+      let input1;
+      let input2;
+      const getinputvalue = () => {
+        input1 = parseInt(document.querySelector("#i1").value);
+        input2 = parseInt(document.querySelector("#i2").value);
+        // console.log(parseInt(input1.value)+parseInt(input2.value))
+      };
+
+      document.querySelector("#btn").addEventListener("click", () => {
+        document.querySelector("h1").innerText = input1 + input2;
+      });
+
+      document.querySelector("#btn1").addEventListener("click", () => {
+        document.querySelector("h1").innerText = input1 - input2;
+      });
+      document.querySelector("#btn2").addEventListener("click", () => {
+        document.querySelector("h1").innerText = input1 * input2;
+      });
+      document.querySelector("#btn3").addEventListener("click", () => {
+        document.querySelector("h1").innerText = input1 / input2;
+      });
+    </script>
+
+     
+  </body>
+</html>

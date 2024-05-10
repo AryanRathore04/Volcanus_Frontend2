@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let cu = prompt("Select the currency");
+      let USD = 81.23;
+      let EUR = 88.89;
+      let YEN = 0.51;
+      let pounds = 103.89;
+      let KHD = 223.12;
+
+      let INR = parseInt(prompt("enter the inr value"));
+
+      let result;
+
+      switch (cu) {
+        case "USD":
+          result = INR / USD;
+          prompt()
+          break;
+        case "EUR":
+          result = INR / EUR;
+          console.log(result);
+
+          break;
+        case "YEN":
+          result = INR / YEN;
+          console.log(result);
+
+          break;
+        case "KHD":
+          result = INR / KHD;
+          console.log(result);
+
+          break;
+      }
+    </script>
+  </body>
+</html>

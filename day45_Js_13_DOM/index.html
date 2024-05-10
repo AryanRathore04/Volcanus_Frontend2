@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc</title>
+  </head>
+  <body>
+    <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis commodi
+      voluptate animi.
+    </h1>
+    <p class="strero" id="ruy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quos, quod odio accusantium tempore amet nulla enim totam cupiditate a at commodi quidem esse, modi quo eveniet, ducimus doloremque quae.</p>
+    <img src="https://cdn.pixabay.com/photo/2024/03/01/16/25/costa-rica-8606850_640.jpg" alt="">
+
+    <script>
+    //   var data = document.body;
+    //   console.log(Image);
+
+
+
+    var data = document.getElementsByClassName("strero")
+    for(let i = 0; i<data.length; i++){
+        console.log(data.item(i))
+
+        data.item(i).style.background = "chocolate";
+    }
+
+
+    // var data = document.getElementById("ruy")
+    // console.log(data.innerText)
+
+    // data.innerText = "Aryan"
+
+    // data.innerText = "<h1> 4"
+
+        var data = document.getElementById("ruy")
+        console.log(data.innerText)
+
+        data.innerText ="Aryan"
+
+        data.innerText ="<h1> 4"
+
+
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color:rgb(53, 60, 66);
+            color: white;
+        }
+        #mealdata {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            border-radius: 20px;
+            /* width: 1000px; */
+        }
+        .mean{
+            border-radius: 20px;
+            border: 2px solid black;
+            
+
+        }
+        .heading{
+            font-size: 13px;
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            height: 20px;
+        }
+
+        .mean:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 40px;
+            color:lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>Famous food from all over world</h1>
+
+
+    <button id="italiandata">Italian</button>
+    <button id="chinesedata">Chinese</button>
+    <button id="mexicandata">Mexican</button>
+    <button id="mealdata2">Indian</button>
+
+    <div class="super">
+        <div id="mealdata"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      .simp {
+        background-color: coral;
+      }
+      .line {
+        background-color: darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="ruy">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iusto ipsam
+      recusandae quisquam unde magnam, quod esse, voluptatem voluptas, hic
+      itaque cumque officia expedita saepe porro deleniti! Dolorum, consectetur
+      voluptatum
+    </p>
+
+    <p id="lome">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem saepe
+      quisquam maiores molestias earum, alias qui quasi voluptatum, aut fuga
+      accus
+    </p>
+
+    <img
+      id="image"
+      src="https://cdn.pixabay.com/photo/2023/06/05/02/01/starry-sky-8041247_640.jpg"
+      alt=""
+    />
+
+    <script>
+      // "use strict";
+      // a = 10;
+      // console.log(a);
+
+      var bata = document.getElementById("ruy");
+      console.log(bata.innerText);
+
+      bata.innerText = "Aryan";
+
+      bata.innerHTML = "<h1> ghfghfthf </h1>";
+
+      let sopp = (document.getElementById("image").src =
+        "https://cdn.pixabay.com/photo/2023/08/20/08/30/luis-i-bridge-8201941_640.jpg");
+
+      bata.classList.add("simp");
+
+      // data.classList.add("simp", "line")
+      bata.style.textDecoration = "Underline";
+
+      bata.style.color = "green";
+
+      bata.remove();
+      console.log(bata.paraElement);
+
+      // data.parentElement.style.background = "yellow"
+
+      // let addNew = document.createElement("p");
+
+      // addNew.innerText = "Hello i am new ajbdkabd";
+      // console.log(addNew);
+      // let newElement = document.getElementById("ruy");
+      // newElement.appendChild("addNew")
+      // newElement.appendChild(addNew);
+
+      // let addElement = document.getElementById("")
+      let newdata = document.createElement("p");
+      newdata.innerText = "hello, how are you";
+      let newField = document.getElementById("lome");
+      console.log(newField);
+      newField.appendChild(newdata);
+    </script>
+  </body>
+</html>
