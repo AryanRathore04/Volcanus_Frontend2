@@ -1,0 +1,15 @@
+body{
+  background-color: rgb(37, 14, 14);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+input{
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(247, 135, 125);
+  background-color: rgb(73, 19, 14);
+  /* color: salmon */
+  color: white;
+  font-size: 20px;
+}
